@@ -1,0 +1,499 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+*::selection {
+  background-color: rgb(0, 0, 0);
+  color: rgb(19, 81, 239);
+}
+::-webkit-scrollbar {
+  /* background-color: black;
+  color: #1351EF; */
+  display: none;
+}
+#nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 0px 15px;
+  background: transparent;
+  position: fixed;
+  z-index: 999;
+}
+
+#nav img {
+  padding-top: 0px;
+  height: 80px;
+  width: 90px;
+  background: transparent;
+}
+
+#nav h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.1vw;
+  cursor: pointer;
+}
+#nav h4 a{
+  text-decoration: none;
+}
+#nav h4:hover {
+  color: #1351ef;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  position: fixed;
+  z-index: -1;
+}
+
+#mouse {
+  height: 15px;
+  width: 15px;
+  background-color: hsl(223, 75%, 58%);
+  border-radius: 50%;
+  position: fixed;
+  z-index: 99;
+  transition: all linear 0.1s;
+}
+#mouse-blur {
+  height: 500px;
+    width: 500px;
+    background-color: hsla(223, 75%, 58%, 0.358);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(80px);
+    z-index: 9;
+    transition: all linear 0.4s;
+}
+#main {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.37);
+}
+#page1 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+#page1 .arrow{
+  background-color: red;
+  height: 200px;
+  width: 200px;
+ 
+  justify-content: center;
+}
+#page1 .arrow i{
+  font-size: 25px;
+  position: absolute;
+  left: -10;
+  bottom: -10;
+}
+#page1 h1 {
+  text-transform: uppercase;
+  font-size: 7vw;
+  font-weight: 900;
+  position: relative;
+  z-index: 10;
+}
+#page1 h1::before {
+  content: "Exercise. Sweat. Progress.";
+  position: absolute;
+  color: black;
+  left: -9px;
+  top: -1px;
+  z-index: -1;
+  -webkit-text-stroke: 4px #1351ef;
+}
+#page1 h4 {
+  text-transform: uppercase;
+  font-size: 2vw;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  z-index: 10;
+}
+#page1 p {
+  width: 60%;
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  z-index: 100;
+}
+#scroller::-webkit-scrollbar {
+  display: none;
+}
+#scroller {
+  /* background-color: red; */
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: auto;
+  z-index: 10;
+  position: relative;
+}
+#scroller-in {
+  display: inline-block;
+  white-space: nowrap;
+  animation-name: scroll;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 10;
+}
+#scroller h4 {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 120px;
+  font-weight: 900;
+  margin-right: 20px;
+  transition: all linear 0.3s;
+  color: #000;
+  -webkit-text-stroke: 2px #ffffff;
+}
+#scroller h4:hover {
+  color: #1351ef;
+  -webkit-text-stroke: 2px #1351ef;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+#about-us {
+  position: relative;
+  padding: 50px 0;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 10;
+}
+
+#about-us img {
+ 
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  
+}
+#about-us-in {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  
+}
+#about-us-in h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 900;
+
+}
+#about-us-in p {
+  margin-top: 70px;
+  display: inline-flex;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+ 
+}
+
+
+#card-container{
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#card-container .cards{
+  height: 80%;
+  width: 25%;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  gap: 35px;
+  transition: all ease 0.8s;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+
+
+#card-container #card1{
+ 
+  background-image: url(img/deadlift.avif);
+
+}
+#card-container #card2{
+  background-image: url(img/Arm\ wrestling.jpg);
+}
+#card-container #card3{
+  background-image: url(img/presnol\ trainer.avif);
+}
+
+.cards-heading{
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 36px;
+  /* text-align: center; */
+  font-weight: 900;
+  word-wrap: none;
+  bottom: 10px; 
+  z-index: 9; 
+  opacity: 1;
+  transition: all ease 0.4s;
+  
+}
+.overlay{
+  background-color: #2c64f3fd;
+  z-index: 12;
+  height: 100%;
+  width: 100%;
+  transition: all ease 0.4s;
+  opacity: 0;
+}
+
+.overlay h4{
+  text-transform: uppercase;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px;
+  padding-top: 100px;
+  font-weight: 900;
+  word-wrap: none;
+  /* opacity: 1; */
+  
+}
+
+.overlay p{
+   text-align: center;
+   font-size: 18px;
+   padding: 20px;
+   z-index: 12;
+}
+
+.cards:hover .overlay{
+  opacity: 1;
+}
+.cards:hover .cards-heading{
+  opacity: 0;
+}
+
+.cards:hover{
+  /* transform: rotateY(20deg); Apply the rotation to the entire card */
+  transform: rotate3d(-1, 1, 0, 20deg);
+}
+
+#blue-label{
+  height:30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+  margin-top: 120px;
+  background: linear-gradient( to right  bottom,#094dfa, rgb(29, 142, 235));
+}
+#blue-label h3{
+  width: 50%;
+  font-size: 4vh;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 800;
+  line-height: 50px;
+}
+
+#blue-label img{
+  height: 100%;
+  width: 14%;
+  object-fit: cover;
+  object-position: center;
+}
+#blue-label #rightimage{
+  transform: rotate(180deg);
+}
+
+#page3{
+  height: 100vh;
+  width: 100%;
+}
+
+#page3 #motive{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10
+}
+
+
+#motive>p{
+  width: 66%;
+  font-size: 25px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#motive img{
+  height: 70px;
+  position: absolute;
+}
+ #colon1{
+  left: 10%;
+  top: 28%;
+}
+#colon2{
+  right: 15%;
+  bottom: 30%;
+}
+
+#page4{
+  /* background-color: red; */
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:70px;
+  position: relative;
+}
+
+#page4 #elem{
+  width: 26%;
+  height: 70%;
+  position: relative;
+  border-radius: 20px;
+ 
+  overflow: hidden;
+  z-index: 10;
+
+}
+#page4 #elem h2{
+  height: 100%;
+  width: 100%;
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 800;
+  background-color: #346af3;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+  transition: all ease 0.5s;
+  scale: 1.1;
+  
+}
+
+#page4 #elem img{
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+
+  transition: all ease 0.5s;
+  scale: 1.1;
+  
+}
+
+#page4 #elem:hover h2{
+  background-color: transparent;
+}
+
+#page4 #elem:hover img{
+  scale: 1.0;
+}
+
+
+#page4 h1{
+  position: absolute;
+  font-size: 80px;
+  top: -17%;
+  font-weight: 900;
+  -webkit-text-stroke: 3px  #094dfa;
+}
+
+#footer{
+  background: linear-gradient( to right  bottom,#0996fa, rgb(13, 86, 211));
+  width: 100%;
+  height: 40vh;
+  margin-top: 60px;
+  position: relative;
+   z-index: 10;  
+  
+}
+#footer #top  {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#footer #top #content1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#footer #top .content{
+  text-transform: uppercase;
+  line-height: 1.4;
+  font-weight: 900;
+} 
+#footer #top #content4{
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#footer #top #content1 .logo img{
+height: 200px;
+}
+
+#footer #top #content1 .social img{
+  height: 30px;
+  }
+
+  #footer #bottom p{
+    position: absolute;
+    bottom: 0;
+  padding-left: 10px;
+  }
