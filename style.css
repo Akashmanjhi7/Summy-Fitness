@@ -47,7 +47,7 @@ body {
   font-size: 1.1vw;
   cursor: pointer;
 }
-#nav h4 a{
+#nav h4 a {
   text-decoration: none;
 }
 #nav h4:hover {
@@ -56,7 +56,7 @@ body {
 
 video {
   height: 100%;
-  width: 100%;
+  min-width: 100%;
   object-fit: cover;
   object-position: top;
   position: fixed;
@@ -74,13 +74,13 @@ video {
 }
 #mouse-blur {
   height: 500px;
-    width: 500px;
-    background-color: hsla(223, 75%, 58%, 0.358);
-    border-radius: 50%;
-    position: fixed;
-    filter: blur(80px);
-    z-index: 9;
-    transition: all linear 0.4s;
+  width: 500px;
+  background-color: hsla(223, 75%, 58%, 0.358);
+  border-radius: 50%;
+  position: fixed;
+  filter: blur(80px);
+  z-index: 9;
+  transition: all linear 0.4s;
 }
 #main {
   position: relative;
@@ -96,14 +96,14 @@ video {
   text-align: center;
   position: relative;
 }
-#page1 .arrow{
+#page1 .arrow {
   background-color: red;
   height: 200px;
   width: 200px;
- 
+
   justify-content: center;
 }
-#page1 .arrow i{
+#page1 .arrow i {
   font-size: 25px;
   position: absolute;
   left: -10;
@@ -199,25 +199,21 @@ video {
 }
 
 #about-us img {
- 
   height: 300px;
   width: 300px;
   object-fit: cover;
   border-radius: 20px;
-  
 }
 #about-us-in {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 50%;
-  
 }
 #about-us-in h3 {
   font-size: 40px;
   text-transform: uppercase;
   font-weight: 900;
-
 }
 #about-us-in p {
   margin-top: 70px;
@@ -225,11 +221,9 @@ video {
   text-align: center;
   font-size: 18px;
   line-height: 26px;
- 
 }
 
-
-#card-container{
+#card-container {
   height: 60vh;
   width: 100%;
   display: flex;
@@ -237,7 +231,7 @@ video {
   justify-content: space-around;
 }
 
-#card-container .cards{
+#card-container .cards {
   height: 80%;
   width: 25%;
   border-radius: 20px;
@@ -253,34 +247,29 @@ video {
   justify-content: center;
 }
 
-
-
-#card-container #card1{
- 
+#card-container #card1 {
   background-image: url(img/deadlift.avif);
-
 }
-#card-container #card2{
+#card-container #card2 {
   background-image: url(img/Arm\ wrestling.jpg);
 }
-#card-container #card3{
+#card-container #card3 {
   background-image: url(img/presnol\ trainer.avif);
 }
 
-.cards-heading{
+.cards-heading {
   position: absolute;
   text-transform: uppercase;
   font-size: 36px;
   /* text-align: center; */
   font-weight: 900;
   word-wrap: none;
-  bottom: 10px; 
-  z-index: 9; 
+  bottom: 10px;
+  z-index: 9;
   opacity: 1;
   transition: all ease 0.4s;
-  
 }
-.overlay{
+.overlay {
   background-color: #2c64f3fd;
   z-index: 12;
   height: 100%;
@@ -289,7 +278,7 @@ video {
   opacity: 0;
 }
 
-.overlay h4{
+.overlay h4 {
   text-transform: uppercase;
   font-size: 35px;
   text-align: center;
@@ -298,30 +287,29 @@ video {
   font-weight: 900;
   word-wrap: none;
   /* opacity: 1; */
-  
 }
 
-.overlay p{
-   text-align: center;
-   font-size: 18px;
-   padding: 20px;
-   z-index: 12;
+.overlay p {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  z-index: 12;
 }
 
-.cards:hover .overlay{
+.cards:hover .overlay {
   opacity: 1;
 }
-.cards:hover .cards-heading{
+.cards:hover .cards-heading {
   opacity: 0;
 }
 
-.cards:hover{
+.cards:hover {
   /* transform: rotateY(20deg); Apply the rotation to the entire card */
   transform: rotate3d(-1, 1, 0, 20deg);
 }
 
-#blue-label{
-  height:30vh;
+#blue-label {
+  height: 30vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -329,9 +317,9 @@ video {
   position: relative;
   z-index: 10;
   margin-top: 120px;
-  background: linear-gradient( to right  bottom,#094dfa, rgb(29, 142, 235));
+  background: linear-gradient(to right bottom, #094dfa, rgb(29, 142, 235));
 }
-#blue-label h3{
+#blue-label h3 {
   width: 50%;
   font-size: 4vh;
   text-align: center;
@@ -340,33 +328,32 @@ video {
   line-height: 50px;
 }
 
-#blue-label img{
+#blue-label img {
   height: 100%;
   width: 14%;
   object-fit: cover;
   object-position: center;
 }
-#blue-label #rightimage{
+#blue-label #rightimage {
   transform: rotate(180deg);
 }
 
-#page3{
+#page3 {
   height: 100vh;
   width: 100%;
 }
 
-#page3 #motive{
+#page3 #motive {
   height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 10
+  z-index: 10;
 }
 
-
-#motive>p{
+#motive > p {
   width: 66%;
   font-size: 25px;
   line-height: 45px;
@@ -375,47 +362,46 @@ video {
   font-weight: 700;
 }
 
-#motive img{
+#motive img {
   height: 70px;
   position: absolute;
 }
- #colon1{
+#colon1 {
   left: 10%;
   top: 28%;
 }
-#colon2{
+#colon2 {
   right: 15%;
   bottom: 30%;
 }
 
-#page4{
+#page4 {
   /* background-color: red; */
   height: 30vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:70px;
+  gap: 70px;
   position: relative;
 }
 
-#page4 #elem{
+#page4 #elem {
   width: 26%;
   height: 70%;
   position: relative;
   border-radius: 20px;
- 
+
   overflow: hidden;
   z-index: 10;
-
 }
-#page4 #elem h2{
+#page4 #elem h2 {
   height: 100%;
   width: 100%;
   font-size: 35px;
   text-transform: uppercase;
   font-weight: 800;
-  background-color: #346af3;    
+  background-color: #346af3;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -423,46 +409,131 @@ video {
   z-index: 10;
   transition: all ease 0.5s;
   scale: 1.1;
-  
 }
 
-#page4 #elem img{
+#page4 #elem img {
   height: 100%;
   width: 100%;
-  object-fit:cover;
+  object-fit: cover;
 
   transition: all ease 0.5s;
   scale: 1.1;
-  
 }
 
-#page4 #elem:hover h2{
+#page4 #elem:hover h2 {
   background-color: transparent;
 }
 
-#page4 #elem:hover img{
-  scale: 1.0;
+#page4 #elem:hover img {
+  scale: 1;
 }
 
-
-#page4 h1{
+#page4 h1 {
   position: absolute;
   font-size: 80px;
   top: -17%;
   font-weight: 900;
-  -webkit-text-stroke: 3px  #094dfa;
+  -webkit-text-stroke: 3px #094dfa;
 }
 
-#footer{
-  background: linear-gradient( to right  bottom,#0996fa, rgb(13, 86, 211));
+#page5 {
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+#page5 .content {
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2;
+  padding: 80px 100px;
+}
+#cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+  
+}
+
+#cards .plans {
+  width: 30%;
+  height: 600px;
+  border-radius: 15px;
+  border: 2px solid white;
+  overflow: hidden;
+}
+
+.plans .card-top {
+  height: 40%;
+  width: 100%;
+  background: #0664f1;
+}
+.card-top h4 {
+  height: 20px;
+  padding: 25px 15px;
+}
+.card-top h2 {
+  height: 35px;
+  padding: 15px;
+}
+.card-top p {
+  height: 20px;
+  padding: 15px;
+  padding-top: 30px;
+}
+.card-top button {
+  height: 50px;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 30px;
+  width: 80%;
+  padding: 10px 40px;
+  background: #1351ef;
+  border-radius: 10px;
+  border: 1px solid white;
+  font-size: 20px;
+  text-align: center;
+  scale: 1;
+
+}
+.card-top button:hover{
+  background: #000;
+  z-index: 1.3;
+}
+.plans .card-bottom {
+  height: 60%;
+  width: 100%;
+  background: #0664f1;
+  padding: 30px;
+}
+
+.plans .card-bottom h4{
+  font-size: 30px;
+}
+.plans .card-bottom ul{
+  font-size: 20px;
+
+  line-height: 1.6;
+}
+
+.plans .card-bottom ul li {
+  list-style: none;
+}
+
+
+
+
+#footer {
+  background: linear-gradient(to right bottom, #0996fa, rgb(13, 86, 211));
   width: 100%;
   height: 40vh;
   margin-top: 60px;
   position: relative;
-   z-index: 10;  
-  
+  z-index: 10;
 }
-#footer #top  {
+#footer #top {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -474,26 +545,122 @@ video {
   justify-content: center;
   flex-direction: column;
 }
-#footer #top .content{
+#footer #top .content {
   text-transform: uppercase;
   line-height: 1.4;
   font-weight: 900;
-} 
-#footer #top #content4{
+}
+#footer #top #content4 {
   font-size: 14px;
   font-weight: 500;
 }
 
-#footer #top #content1 .logo img{
-height: 200px;
+#footer #top #content1 .logo img {
+  height: 200px;
 }
 
-#footer #top #content1 .social img{
+#footer #top #content1 .social img {
   height: 30px;
+}
+
+#footer #bottom p {
+  position: absolute;
+  bottom: 0;
+  padding-left: 10px;
+}
+
+/*  */
+
+/* Base styles (for all devices) */
+
+/* Reset some styles for small screens */
+@media screen and (max-width: 600px) {
+  #nav {
+    height: 60px;
+  }
+  #nav img {
+    height: 60px;
+    min-width: 60px;
+  }
+  #nav h4 {
+    font-size: 14px;
   }
 
-  #footer #bottom p{
-    position: absolute;
-    bottom: 0;
-  padding-left: 10px;
+  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    z-index: -1;
   }
+
+  #page1 h1 {
+    font-size: 5vw;
+  }
+  #page1 h4 {
+    font-size: 18px;
+  }
+  #page1 p {
+    width: 80%;
+    font-size: 16px;
+  }
+  #scroller h4 {
+    font-size: 60px;
+  }
+  #about-us img {
+    height: 200px;
+    width: 200px;
+  }
+  #about-us-in h3 {
+    font-size: 24px;
+  }
+  #about-us-in p {
+    font-size: 14px;
+  }
+  #card-container .cards {
+    width: 45%;
+  }
+  .cards-heading {
+    font-size: 24px;
+  }
+  .overlay h4 {
+    font-size: 24px;
+  }
+  .overlay p {
+    font-size: 14px;
+  }
+  #blue-label h3 {
+    font-size: 3vh;
+    line-height: 40px;
+  }
+  #blue-label img {
+    width: 12%;
+  }
+  #motive p {
+    font-size: 20px;
+    line-height: 36px;
+  }
+  #page4 #elem h2 {
+    font-size: 30px;
+  }
+  #footer #top .content {
+    font-size: 14px;
+  }
+  #footer #top #content4 {
+    font-size: 12px;
+  }
+  #footer #top #content1 .logo img {
+    height: 150px;
+  }
+  #footer #top #content1 .social img {
+    height: 20px;
+  }
+  #footer #bottom p {
+    font-size: 12px;
+  }
+}
+
+/* Add more media queries as needed for other screen sizes */
